@@ -1,3 +1,8 @@
+/*
+Designs Available at:
+https://xd.adobe.com/spec/75d448ea-569a-4b7e-721b-9bbd3b2b97b9-03e5/screen/c27ed1eb-3c57-41a8-acb2-90ecaf25f93b/specs/
+*/
+
 .container {
     border: 1px solid blue;
     width: 90%;
@@ -15,22 +20,65 @@
 body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
 }
 
 /*===================
 Typography
 ---------------------*/
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Lora', serif;
     color: #143774;
+    font: 400;
+}
+
+h1 {
     font-size: 2rem;
     margin: 0;
 }
+
+a {
+    color: #1792d2;
+}
+a:hover, 
+a:focus{
+    color: #143774;
+    text-decoration: underline;
+}
+
+strong{
+    font-weight: 700;
+}
+
 .subtitle {
     font-weight: 700;
     color: #1792d2;
     font-size: 0.75rem;
     margin: 0;
+}
+
+.article-title {
+
+}
+
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,  
+.article-read-more:focus{
+    color: #143774;
+    text-decoration: overline;
 }
 
 /*===================
