@@ -10,9 +10,10 @@ https://xd.adobe.com/spec/75d448ea-569a-4b7e-721b-9bbd3b2b97b9-03e5/screen/c27ed
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -23,6 +24,12 @@ body{
     font-size: 1.125rem;
     font-weight: 300;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 
 /*===================
 Typography
@@ -38,6 +45,7 @@ h3 {
 h1 {
     font-size: 2rem;
     margin: 0;
+    text-align: center;
 }
 
 a {
@@ -97,11 +105,13 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding:0;
 }
 
 
 nav li {
-    margin-left: 2em;
+    margin: 0.5em 0;
 }
 
 nav a {
@@ -123,19 +133,25 @@ nav a:hover, nav a:focus {
     color: #707070;
 }
 
-@media (max-width: 675px) {
-    .container-nav {
-        flex-direction: column;
-        justify-content: center;
+@media (min-width: 675px) {
+    .container-flex {
+        flex-direction: row;
+        justify-content: space-between;
     }
-    nav ul {
-        flex-direction: column;
+    main {
+        width: 75%
+    }
+    aside {
+        width : 20%
+    }
+     nav ul {
+        flex-direction: row;
         padding:0;
     }
     nav li {
-        margin: 0.5em 0;
+        margin-left: 2em;
     }
     h1 {
-        text-align: center;
-    }
+         text-align: center;
+    } 
 }
